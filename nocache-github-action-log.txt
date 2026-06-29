@@ -5,24 +5,23 @@ Running tests on Environment:  qa
 Running 52 tests using 4 workers
   -   1 [chromium] › tests/api/intercept.spec.ts:54:6 › mock search page with fake HTML
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ suppress logs { quiet: true }
+◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ override existing { override: true }
+◇ injected env (0) from config/.env.qa // tip: ⌘ enable debugging { debug: true }
+Running tests on Environment:  qa
+◇ injected env (0) from config/.env.qa // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
 Running tests on Environment:  qa
 ◇ injected env (0) from config/.env.qa // tip: ◈ encrypted .env [www.dotenvx.com]
-Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ suppress logs { quiet: true }
-  ✘   3 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (649ms)
-Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ suppress logs { quiet: true }
+  ✘   2 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (554ms)
 GET ***/opencart/index.php?route=common/home
 fake json response: [
   { name: 'Fake MacBook Pro', price: '$599' },
   { name: 'Fake iphone 20', price: '$999' }
 ]
-  ✓   4 [chromium] › tests/api/intercept.spec.ts:25:1 › @@regression mock search data api (280ms)
-  ✘   6 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (retry #1) (543ms)
-  ✓   5 [chromium] › tests/api/users.api.indi.spec.ts:25:1 › @regression POST - create a user (1.8s)
+  ✓   4 [chromium] › tests/api/intercept.spec.ts:25:1 › @@regression mock search data api (279ms)
+Running tests on Environment:  qa
+◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
+  ✘   7 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (retry #1) (473ms)
 GET ***/opencart/catalog/view/javascript/jquery/jquery-3.7.0.min.js
 GET ***/opencart/catalog/view/javascript/bootstrap/css/bootstrap.min.css
 GET ***/opencart/catalog/view/javascript/bootstrap/js/bootstrap.min.js
@@ -35,8 +34,9 @@ GET ***/opencart/catalog/view/javascript/jquery/swiper/js/swiper.jquery.min.js
 GET ***/opencart/catalog/view/javascript/common.js
 GET ***/opencart/image/catalog/opencart-logo.png
 GET ***/opencart/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg
+  ✓   5 [chromium] › tests/api/users.api.indi.spec.ts:25:1 › @regression POST - create a user (1.8s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ suppress logs { quiet: true }
+◇ injected env (0) from config/.env.qa // tip: ⌘ custom filepath { path: '/custom/path/.env' }
 GET ***/opencart/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg
 GET ***/opencart/image/cache/catalog/demo/macbook_1-200x200.jpg
 GET ***/opencart/image/cache/catalog/demo/iphone_1-200x200.jpg
@@ -44,7 +44,6 @@ GET ***/opencart/image/cache/catalog/demo/apple_cinema_30-200x200.jpg
 GET ***/opencart/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg
 GET ***/opencart/image/cache/catalog/demo/manufacturer/harley-130x100.png
 GET ***/opencart/image/cache/catalog/demo/manufacturer/dell-130x100.png
-  ✘   9 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (retry #2) (559ms)
 GET ***/opencart/image/cache/catalog/demo/manufacturer/disney-130x100.png
 GET ***/opencart/image/cache/catalog/demo/manufacturer/cocacola-130x100.png
 GET ***/opencart/image/cache/catalog/demo/manufacturer/burgerking-130x100.png
@@ -56,120 +55,121 @@ GET ***/opencart/image/cache/catalog/demo/manufacturer/starbucks-130x100.png
 GET ***/opencart/image/cache/catalog/demo/manufacturer/nintendo-130x100.png
 GET https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2
 GET ***/opencart/catalog/view/javascript/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+  ✘   9 [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data (retry #2) (497ms)
   ✓   8 [chromium] › tests/api/users.api.indi.spec.ts:66:1 › @regression DELETE - delete a user (1.1s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ override existing { override: true }
-  ✓   7 [chromium] › tests/api/users.api.indi.spec.ts:40:1 › @regression PUT - update a user (2.0s)
-  ✓  10 [chromium] › tests/api/users.api.schema.spec.ts:84:1 › @smoke GET -- get all users (473ms)
-  -  13 [chromium] › tests/api/users.api.spec.ts:6:6 › get user test
-  -  14 [chromium] › tests/api/users.api.spec.ts:23:6 › create a user test
-  -  15 [chromium] › tests/api/users.api.spec.ts:48:6 › Update a user test
-  -  16 [chromium] › tests/api/users.api.spec.ts:73:6 › Delete a user test
-  -  17 [chromium] › tests/homepage.spec.ts:24:6 › logout link exist test
-  -  18 [chromium] › tests/homepage.spec.ts:29:6 › home page headers exist test @junesprint
-  ✓   2 [chromium] › tests/api/intercept.spec.ts:10:1 › @smoke intercept and log requests (2.7s)
-  ✓  12 [chromium] › tests/api/users.api.sep.spec.ts:13:5 › running e2e go rest crud api tests › @regression GET API -- get all users (369ms)
-Created User Id:  8528235
-  ✓  21 [chromium] › tests/api/users.api.sep.spec.ts:20:5 › running e2e go rest crud api tests › @regression POST API -- create a user (375ms)
-  ✓  22 [chromium] › tests/api/users.api.sep.spec.ts:36:5 › running e2e go rest crud api tests › @regression PUT API -- Update a user (347ms)
-  ✓  11 [chromium] › tests/api/users.api.schema.spec.ts:53:1 › @smoke GET -- get a user (1.1s)
-  ✓  23 [chromium] › tests/api/users.api.sep.spec.ts:48:5 › running e2e go rest crud api tests › @regression DELETE API -- Delete a user (422ms)
+◇ injected env (0) from config/.env.qa // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+  ✓   6 [chromium] › tests/api/users.api.indi.spec.ts:40:1 › @regression PUT - update a user (2.0s)
+  ✓  11 [chromium] › tests/api/users.api.sep.spec.ts:13:5 › running e2e go rest crud api tests › @regression GET API -- get all users (336ms)
+  ✓  10 [chromium] › tests/api/users.api.schema.spec.ts:84:1 › @smoke GET -- get all users (399ms)
+  -  14 [chromium] › tests/api/users.api.spec.ts:6:6 › get user test
+  -  15 [chromium] › tests/api/users.api.spec.ts:23:6 › create a user test
+  -  16 [chromium] › tests/api/users.api.spec.ts:48:6 › Update a user test
+  -  17 [chromium] › tests/api/users.api.spec.ts:73:6 › Delete a user test
+  -  18 [chromium] › tests/homepage.spec.ts:24:6 › logout link exist test
+  -  19 [chromium] › tests/homepage.spec.ts:29:6 › home page headers exist test @junesprint
+  ✓   3 [chromium] › tests/api/intercept.spec.ts:10:1 › @smoke intercept and log requests (2.9s)
+Created User Id:  8528333
+  ✓  13 [chromium] › tests/api/users.api.sep.spec.ts:20:5 › running e2e go rest crud api tests › @regression POST API -- create a user (347ms)
+  ✓  22 [chromium] › tests/api/users.api.sep.spec.ts:36:5 › running e2e go rest crud api tests › @regression PUT API -- Update a user (335ms)
+  ✓  12 [chromium] › tests/api/users.api.schema.spec.ts:53:1 › @smoke GET -- get a user (1.1s)
+  ✓  23 [chromium] › tests/api/users.api.sep.spec.ts:48:5 › running e2e go rest crud api tests › @regression DELETE API -- Delete a user (326ms)
   -  25 [chromium] › tests/loginpage.spec.ts:15:6 › login page title test
   -  26 [chromium] › tests/loginpage.spec.ts:21:6 › forgot pwd link exist test
   -  27 [chromium] › tests/loginpage.spec.ts:25:6 › user is able to login to app test
 user creds:  - ***
 user creds:  - ***
 home page title Account Login
-  ✘  19 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (2.5s)
+  ✘  20 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (2.4s)
 user creds:  - ***
-  ✘  20 [chromium] › tests/homepagefix.spec.ts:16:1 › @smoke logout link exist test (2.7s)
-Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ enable debugging { debug: true }
-home page headers:  [ 'New Customer', 'Returning Customer' ]
 login page title Account Login
+  ✘  21 [chromium] › tests/homepagefix.spec.ts:16:1 › @smoke logout link exist test (2.9s)
+  ✓  28 [chromium] › tests/loginpagefix.spec.ts:11:1 › @smoke login page title test (2.0s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ◈ secrets for agents [www.dotenvx.com]
-  ✓  28 [chromium] › tests/loginpagefix.spec.ts:11:1 › @smoke login page title test (2.1s)
-  ✘  24 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (2.7s)
-Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
-user creds:  - ***
-user creds:  - ***
-  ✓  31 [chromium] › tests/loginpagefix.spec.ts:17:1 › @regression forgot pwd link exist test (2.0s)
-home page title Account Login
-user creds:  - ***
-  ✘  29 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (retry #1) (2.9s)
+◇ injected env (0) from config/.env.qa // tip: ◈ encrypted .env [www.dotenvx.com]
 home page headers:  [ 'New Customer', 'Returning Customer' ]
-  ✘  30 [chromium] › tests/homepagefix.spec.ts:16:1 › @smoke logout link exist test (retry #1) (2.9s)
+  ✘  24 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (2.8s)
 Running tests on Environment:  qa
 ◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
-  ✘  32 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (retry #1) (2.9s)
-user creds:  - ***
 Running tests on Environment:  qa
 ◇ injected env (0) from config/.env.qa // tip: ⌘ suppress logs { quiet: true }
+  ✓  29 [chromium] › tests/loginpagefix.spec.ts:17:1 › @regression forgot pwd link exist test (2.2s)
+user creds:  - ***
+user creds:  - ***
+home page title Account Login
+user creds:  - ***
+  ✘  30 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (retry #1) (2.8s)
+home page headers:  [ 'New Customer', 'Returning Customer' ]
+  ✘  31 [chromium] › tests/homepagefix.spec.ts:16:1 › @smoke logout link exist test (retry #1) (2.8s)
+Running tests on Environment:  qa
+◇ injected env (0) from config/.env.qa // tip: ⌘ enable debugging { debug: true }
+user creds:  - ***
+  ✘  32 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (retry #1) (3.0s)
 Running tests on Environment:  qa
 ◇ injected env (0) from config/.env.qa // tip: ◈ secrets for agents [www.dotenvx.com]
   ✘  33 [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test (2.8s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ◈ secrets for agents [www.dotenvx.com]
+◇ injected env (0) from config/.env.qa // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+Running tests on Environment:  qa
+◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
+user creds:  - ***
 user creds:  - ***
 home page title Account Login
+  ✘  34 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (retry #2) (2.7s)
 user creds:  - ***
-  ✘  34 [chromium] › tests/homepagefix.spec.ts:9:1 › @smoke home page title test (retry #2) (2.5s)
-user creds:  - ***
-Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ custom filepath { path: '/custom/path/.env' }
-home page headers:  [ 'New Customer', 'Returning Customer' ]
   ✘  35 [chromium] › tests/homepagefix.spec.ts:16:1 › @smoke logout link exist test (retry #2) (2.9s)
   -  38 [chromium] › tests/loginpagefix.spec.ts:40:10 › @regression invalid login test with - invalid@open.com - wrong123
   -  39 [chromium] › tests/loginpagefix.spec.ts:40:10 › @regression invalid login test with -  - ***4
   -  40 [chromium] › tests/loginpagefix.spec.ts:40:10 › @regression invalid login test with - pwtestbatch@open.com - 
+Running tests on Environment:  qa
+◇ injected env (0) from config/.env.qa // tip: ◈ secrets for agents [www.dotenvx.com]
 user creds:  - ***
-  ✘  36 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (retry #2) (2.9s)
+home page headers:  [ 'New Customer', 'Returning Customer' ]
+  ✘  36 [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test (retry #2) (3.2s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ override existing { override: true }
+◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ override existing { override: true }
-  ✘  37 [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test (retry #1) (3.0s)
+◇ injected env (0) from config/.env.qa // tip: ⌘ enable debugging { debug: true }
+  ✘  37 [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test (retry #1) (3.3s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌘ override existing { override: true }
+◇ injected env (0) from config/.env.qa // tip: ◈ secrets for agents [www.dotenvx.com]
 user creds: invalid@open.com - wrong123
 user creds:  - ***4
 user creds: abccc@gmail.com - wrong123
 user creds: pwtestbatch@open.com - 
 user creds:  - ***
-  ✓  42 [chromium] › tests/loginpagefix.spec.ts:52:5 › @regression invalid login test with excel data - abccc@gmail.com (2.6s)
+  ✓  42 [chromium] › tests/loginpagefix.spec.ts:52:5 › @regression invalid login test with excel data - abccc@gmail.com (2.9s)
   ✓  41 [chromium] › tests/loginpagefix.spec.ts:29:1 › @regression login to app using wrong credentials with Data driven test (3.7s)
-  ✓  43 [chromium] › tests/loginpagefix.spec.ts:52:5 › @regression invalid login test with excel data -  (2.6s)
 user creds:  - ***
-  ✘  44 [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test (retry #2) (2.5s)
+  ✓  43 [chromium] › tests/loginpagefix.spec.ts:52:5 › @regression invalid login test with excel data -  (2.7s)
+  ✘  44 [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test (retry #2) (2.7s)
 Running tests on Environment:  qa
-◇ injected env (0) from config/.env.qa // tip: ⌁ auth for agents [www.vestauth.com]
+◇ injected env (0) from config/.env.qa // tip: ⌘ enable debugging { debug: true }
 user creds: pwbatchtest@open.com - 
 user creds: wrong@open.com - wrong@123
 user creds: invalid@open.com -  
   ✓  45 [chromium] › tests/loginpagefix.spec.ts:52:5 › @regression invalid login test with excel data - pwbatchtest@open.com (2.6s)
-  ✓  46 [chromium] › tests/loginpagefix.spec.ts:62:5 › invalid login test with JSON data - wrong@open.com (2.6s)
+  ✓  46 [chromium] › tests/loginpagefix.spec.ts:62:5 › invalid login test with JSON data - wrong@open.com (2.7s)
   ✓  47 [chromium] › tests/loginpagefix.spec.ts:62:5 › invalid login test with JSON data - invalid@open.com (2.5s)
 user creds: pwbatchtest@open.com - wrong@123
+  ✓  48 [chromium] › tests/loginpagefix.spec.ts:62:5 › invalid login test with JSON data - pwbatchtest@open.com (2.9s)
+  ✓  49 [chromium] › tests/loginpagefix.spec.ts:72:1 › @smoke comp logo exists on product page (2.1s)
 user creds:  - ***
-  ✓  48 [chromium] › tests/loginpagefix.spec.ts:62:5 › invalid login test with JSON data - pwbatchtest@open.com (2.8s)
-  ✓  49 [chromium] › tests/loginpagefix.spec.ts:72:1 › @smoke comp logo exists on product page (2.4s)
-  ✓  50 [chromium] › tests/loginpagefix.spec.ts:76:1 › @smoke footers exist on product page (2.3s)
-  ✓  51 [chromium] › tests/productpage.spec.ts:11:1 › @smoke comp logo exists on product page (2.5s)
+  ✓  50 [chromium] › tests/loginpagefix.spec.ts:76:1 › @smoke footers exist on product page (2.2s)
+  ✓  51 [chromium] › tests/productpage.spec.ts:11:1 › @smoke comp logo exists on product page (2.6s)
   -  55 [chromium] › tests/search.spec.ts:14:10 › @regression verify search results count - macbook - MacBook Pro
   -  56 [chromium] › tests/search.spec.ts:14:10 › @regression verify search results count - macbook - MacBook Air
   -  57 [chromium] › tests/search.spec.ts:14:10 › @regression verify search results count - imac - iMac
 user creds:  - ***
 user creds:  - ***
 user creds:  - ***
+search key: macbook
+  ✓  52 [chromium] › tests/productpage.spec.ts:15:1 › @smoke footers exist on product page (2.6s)
 user creds:  - ***
 search key: macbook
 search key: macbook
-  ✓  52 [chromium] › tests/productpage.spec.ts:15:1 › @smoke footers exist on product page (2.9s)
-search key: macbook
 total images:  4
-  ✓  53 [chromium] › tests/productpage.spec.ts:19:1 › @regression verify product images count (4.1s)
+  ✓  53 [chromium] › tests/productpage.spec.ts:19:1 › @regression verify product images count (3.9s)
 Actual Product Details:  Map(8) {
   'ProductHeader' => 'MacBook Pro',
   'ProductImages' => 4,
@@ -180,18 +180,18 @@ Actual Product Details:  Map(8) {
   'ProductPrice' => '$2,000.00',
   'ExTaxPrice' => '$2,000.00'
 }
-  ✓  54 [chromium] › tests/productpage.spec.ts:29:1 › @regression verify product Information/Data (4.3s)
-  ✓  58 [chromium] › tests/search.spec.ts:22:5 › @regression verify user is able to land on the product page - macbook - MacBook Pro (4.1s)
+  ✓  54 [chromium] › tests/productpage.spec.ts:29:1 › @regression verify product Information/Data (4.1s)
 user creds:  - ***
+  ✓  58 [chromium] › tests/search.spec.ts:22:5 › @regression verify user is able to land on the product page - macbook - MacBook Pro (4.0s)
 search key: macbook
 user creds:  - ***
+user creds:  - ***
 search key: imac
-user creds:  - ***
-user creds:  - ***
   ✓  59 [chromium] › tests/search.spec.ts:22:5 › @regression verify user is able to land on the product page - macbook - MacBook Air (3.9s)
-  ✓  61 [chromium] › tests/search.spec.ts:32:1 › @smoke comp logo exists on product page (2.5s)
+user creds:  - ***
+  ✓  61 [chromium] › tests/search.spec.ts:32:1 › @smoke comp logo exists on product page (2.6s)
   ✓  62 [chromium] › tests/search.spec.ts:36:1 › @smoke footers exist on product page (2.5s)
-  ✓  60 [chromium] › tests/search.spec.ts:22:5 › @regression verify user is able to land on the product page - imac - iMac (3.5s)
+  ✓  60 [chromium] › tests/search.spec.ts:22:5 › @regression verify user is able to land on the product page - imac - iMac (4.0s)
   1) [chromium] › tests/api/amadeus.oauth2.spec.ts:31:1 › @regression GET -- get location data ─────
     Error: expect(received).toBe(expected) // Object.is equality
     Expected: 200
@@ -578,57 +578,5 @@ user creds:  - ***
     [chromium] › tests/homepagefix.spec.ts:21:1 › @regression home page headers exist test ─────────
     [chromium] › tests/loginpagefix.spec.ts:21:1 › @smoke user is able to login to app test ────────
   16 skipped
-  31 passed (32.4s)
+  31 passed (32.3s)
 Error: Process completed with exit code 1.
-2s
-Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Run actions/upload-artifact@v4
-(node:4956) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-With the provided path, there will be 42 files uploaded
-Artifact name is valid!
-Root directory input is valid!
-Beginning upload of artifact content to blob storage
-(node:4956) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
-Uploaded bytes 5172132
-Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is 9a0519e11b22309909f6667221efc62680fe23c8a4c38b5593ae76378663e98b
-Finalizing artifact upload
-Artifact playwright-html-report-28374858634.zip successfully finalized. Artifact ID 7952996329
-Artifact playwright-html-report-28374858634 has been successfully uploaded! Final size is 5172132 bytes. Artifact ID is 7952996329
-Artifact download URL: https://github.com/onkarundale26/demogithubaction/actions/runs/28374858634/artifacts/7952996329
-2s
-Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Run actions/upload-artifact@v4
-(node:4968) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-With the provided path, there will be 138 files uploaded
-Artifact name is valid!
-Root directory input is valid!
-Beginning upload of artifact content to blob storage
-(node:4968) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
-Uploaded bytes 5523101
-Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is 07e0a7dcbb331b1d053c9ff6574b485423ae24c232afe91cde68965945368373
-Finalizing artifact upload
-Artifact allure-results-28374858634.zip successfully finalized. Artifact ID 7952997075
-Artifact allure-results-28374858634 has been successfully uploaded! Final size is 5523101 bytes. Artifact ID is 7952997075
-Artifact download URL: https://github.com/onkarundale26/demogithubaction/actions/runs/28374858634/artifacts/7952997075
-0s
-0s
-Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Post job cleanup.
-/usr/bin/git version
-git version 2.54.0
-Temporarily overriding HOME='/home/runner/work/_temp/026d1e76-4c9e-4c95-88e0-08e6eac2fde6' before making global git config changes
-Adding repository directory to the temporary git global config as a safe directory
-/usr/bin/git config --global --add safe.directory /home/runner/work/demogithubaction/demogithubaction
-/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-http.https://github.com/.extraheader
-/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-0s
