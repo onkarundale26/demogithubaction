@@ -2,7 +2,7 @@ name: Playwright Tests
 
 on:
   schedule:
-    - cron: '30 21 * * 1-4'  # Mon-Fri 8PM IST
+    - cron: "30 21 * * 1-4" # Mon-Fri 8PM IST
   # push:
   #   branches: [main]
   # pull_request:
@@ -10,9 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Select environment'
+        description: "Select environment"
         required: true
-        default: 'QA'
+        default: "QA"
         type: choice
         options:
           - QA
@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
+          cache: "npm"
 
       - name: Cache Playwright browsers
         id: playwright-cache
@@ -41,6 +41,7 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ hashFiles('package-lock.json') }}
+          save-always: true
 
       - name: Install dependencies
         run: npm ci
