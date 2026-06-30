@@ -1,7 +1,8 @@
-  39 |     async doLogin(username: string, password: string): Promise<void> {
-      40 |         console.log(`user creds: ${username} - ${password}`);
-    > 41 |         await this.emailId.fill(username);
-         |                            ^
-      42 |         await this.password.fill(password);
-      43 |         await this.loginBtn.click();
-      44 |     }
+    - navigating to "***/opencart/index.php?route=common/home", waiting until "load"
+      16 |
+      17 |     //login steps web
+    > 18 |     await page.goto('***/opencart/index.php?route=common/home');
+         |                ^
+      19 | });
+      20 |
+      21 |
