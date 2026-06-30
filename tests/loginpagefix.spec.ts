@@ -19,7 +19,7 @@ test('@regression forgot pwd link exist test', async ({ loginPage }) => {
 });
 
 test('@smoke user is able to login to app test', async ({ loginPage, homePage }) => {
-    await loginPage.doLogin(process.env.USERNAME!, process.env.PASSWORD!);
+  await loginPage.doLogin(process.env.APPUSERNAME!, process.env.PASSWORD!);
     expect.soft(await homePage.isLogoutLinkExist()).toBeTruthy();
     expect.soft(await homePage.getPageTitle()).toBe('My Account');
 });
